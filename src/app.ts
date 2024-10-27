@@ -29,6 +29,10 @@ app.get("/todos", (req: Request, res: Response) => {
   res.send(todos);
 });
 
+app.get("/godos", (req: Request, res: Response) => {
+  res.send(todos);
+});
+
 app.post("/todos", (req: Request, res: Response) => {
   const newTodo: Todo = req.body;
   todos.push(newTodo);
